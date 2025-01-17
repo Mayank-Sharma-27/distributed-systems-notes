@@ -6,7 +6,7 @@ Externally, you'll need to consider how your clients will communicate with your 
 
 Across choices, most systems can be built with a combination of HTTP(S), SSE or long polling, and Websockets. Browsers and apps are built to handle these protocols and they're easy to use and generally speaking most system design interviews don't deal with clients that need to have custom, high-performance protocols.
 
-![[communication_protocols.png]]
+![[communication_protocols.png]](communication_protocols.png)
 
 - Use HTTP(S) for APIs with simple request and responses. Because each request is stateless, you can scale your API horizontally by placing it behind a load balancer. Make sure that your services aren't assuming dependencies on the state of the client (e.g. sessions) and you're good to go.
 - Websockets are necessary if you need realtime, bidirectional communication between the client and the server. From a system design perspective, websockets can be challenging because you need to maintain the connection between client and server. This can be a challenge for load balancers and firewalls, and it can be a challenge for your server to maintain many open connections. A common pattern in these instances is to use a message broker to handle the communication between the client and the server and for the backend services to communicate with this message broker. This ensures you don't need to maintain long connections to every service in your backend.
@@ -14,7 +14,7 @@ Across choices, most systems can be built with a combination of HTTP(S), SSE or 
 
 ## Scaling
 
-![[scaling.png]]
+![[scaling.png]](scaling.png)
 
 Horizontal scaling is all about adding more machines to a system to increase its capacity. This is in contrast to vertical scaling, which is the process of adding more resources to a single machine to increase its capacity.
 
