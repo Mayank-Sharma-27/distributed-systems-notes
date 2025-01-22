@@ -1,7 +1,7 @@
 
 Notes are from : https://www.hellointerview.com/learn/system-design/in-a-hurry/key-technologies
 
-Keep in mind from the Levelling section that the amount of depth your interviewer is likely to probe is proportional to the level you're interviewing at. A mid-level candidate who can roughly describe [ElasticSearch](https://www.hellointerview.com/learn/system-design/deep-dives/elasticsearch) as a search index is likely to be fine, but a senior candidate who can't describe the inverted index or reason about its scaling is likely to be a yellow flag. In either case, focus on breadth before depth!
+I made my own notes but they were too long, so I asked chatGpt to make them more concise.
 
 ## Core Database
 
